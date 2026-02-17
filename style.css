@@ -1,0 +1,58 @@
+.quicksand-main {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+    background-color: black;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    margin: 0;
+    overflow: hidden;
+}
+
+.content {
+    user-select: none;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: white;
+    font-weight: 700;
+    font-size: clamp(2rem, 10vw, 12rem);
+    z-index: 1;
+
+    transform: translateY(-.35vh);
+}
+
+.sub-text {
+    color: white;
+    font-family: Helvetica;
+    width: 100%;
+    text-align: end;
+    
+    transform: translateY(-.35vh);
+}
+
+.divide {
+    z-index: 2;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: difference;
+    pointer-events: none;
+
+    transform: scale(-1);
+}
